@@ -7,7 +7,9 @@ use diesel::r2d2::{ConnectionManager, Pool};
 
 use tokio::net::TcpListener;
 
+mod models;
 mod routes;
+mod schema;
 use routes::user::create_user;
 
 #[tokio::main]
